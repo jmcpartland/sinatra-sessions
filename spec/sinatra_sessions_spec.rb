@@ -38,9 +38,9 @@ describe 'App' do
   end
 
   describe "GET '/set_session'" do
-    it "sets session[:id] equal to 1" do
+    it "sets session[:user_id] equal to 1" do
       get '/set_session'
-      expect(session[:id]).to eq(1)
+      expect(session[:user_id]).to eq(1)
     end
 
     it "redirects user to /fetch_session_id" do
